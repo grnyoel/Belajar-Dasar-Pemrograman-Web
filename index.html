@@ -4,52 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerent Yoel</title>
-    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="./styles/style.css"/>
 </head>
 <body>
-    
-    <header>
-        <a href="#home">grnyoel</a>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
+    <header class="header">
+        <a href="#home" class="logo">grnyoel</a>
+        <nav class="navbar" id="navbar">
+            <a href="#home" data-section="home">Home</a>
+            <a href="#about" data-section="about">About</a>
+            <a href="#education" data-section="education">Education</a>
         </nav>
+        <div class="burger-menu" id="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </header>
 
     <main>
         <section class="home" id="home">
-            <div id="content">
+            <div class="home-content">
                 <h3>Hello, It's me</h3>
                 <h1>Gerent</h1>
-                <p>Computer Science Students</p>
+                <h3>Computer Science Student</h3>
+            </div>
+            <div class="dark-mode-toggle" id="dark-mode-toggle">
+                <label>
+                    <input class="toggle-checkbox" type="checkbox">
+                    <div class="toggle-slot">
+                        <div class="sun-icon-wrapper">
+                            <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+                        </div>
+                        <div class="toggle-button"></div>
+                        <div class="moon-icon-wrapper">
+                            <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+                        </div>
+                    </div>
+                </label>                
             </div>
         </section>
 
-        <section class="about" id="about">
+        <section class="about animate-section" id="about">
             <div class="about-content">
-                <article>
-                    I'm a Computer Science Student with a passion for Programming.
-                    I love exploring the intricacies of coding and trying to solving problems.
-                    My goal is to continuously learn and improve my programming skills while staying updated with the latest trends in technology.
-                    I find joy through programming.
-                </article>
+                <h2 class="heading">About</h2>
+                <div class="about-container">
+                    <article>
+                        I'm a Computer Science Student with a passion for Programming.
+                        I love exploring the intricacies of coding and trying to solve problems.
+                        My goal is to continuously learn and improve my programming skills while staying updated with the latest trends in technology.
+                        I find joy through programming.
 
-                <aside>
-                    <div class="about-img">
-                        <img src="img/profile.jpg" alt="Gerent Yoel">
+                        Experienced with Node.js and cloud computing, especially with Google Cloud Platform (GCP), I have developed a strong foundation in backend development and cloud infrastructure. 
+                        Eager to apply my skills to real-world projects, I always strive to improve and collaborate with teams to create innovative solutions within the technology industry.
+                    </article>
+                    <aside class="about-img">
+                        <img src="./img/profile.png" alt="Gerent">
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="education-animate-section" id="education">
+            <div class="education-content">
+                <h2 class="heading">Education</h2>
+                <div class="education-item">
+                    <img src="./img/universitas-ichsan-logo.png" alt="Universitas Ichsan Gorontalo" class="edu-logo">
+                    <div class="details">
+                        <h2>Universitas Ichsan Gorontalo</h2>
+                        <p><em><b>Bachelor Degree, Computer Science</b></em></p>
+                        <ul>
+                            <li>GPA: 3.91/4.00 (Current)</li>
+                        </ul>
+                        <p class="date"><b>Aug 2022 - Mar 2026 (Expected)</b></p>
                     </div>
-                </aside>
+                </div>
+
+                <div class="education-item">
+                    <img src="./img/atma-jaya-logo.png" alt="Atma Jaya Catholic University of Indonesia" class="edu-logo">
+                    <div class="details">
+                        <h2>Atma Jaya Catholic University of Indonesia</h2>
+                        <p><em><b>Information System</b></em></p>
+                        <ul>
+                            <li>GPA: 3.63/4.00</li>
+                            <li>Student Exchanges</li>
+                        </ul>
+                        <p class="date"><b>Feb 2024 - Jul 2024 (Completed)</b></p>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <img src="./img/bangkit-logo.png" alt="Bangkit Academy" class="edu-logo">
+                    <div class="details">
+                        <h2>Bangkit Academy led By Google, GoTo, Tokopedia, Traveloka</h2>
+                        <p><em><b>Bootcamp</b></em></p>
+                        <p>Bangkit is an approved Kampus Merdeka - Study Independent program fully supported by the Ministry of Education, Culture, Research, and Technology - Republic of Indonesia. This industry-led, interdisciplinary, and immersive program is designed to produce high-caliber technical talents for world-class Indonesian technology companies and startups, fully supported by Google, GoTo, Tokopedia, and Traveloka.</p>
+                        <p class="date"><b>Sep 2024 - Jan 2025</b></p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer">
-            <p>&copy; 2024 Gerent Yoel. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Gerent Yoel. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="./script/script.js"></script>
 </body>
 </html>
